@@ -1,0 +1,26 @@
+{
+    "id": "78E36877",
+    "path": "C:/Users/fxy134/OneDrive - University of Miami/work/project_gtex_nnls_deep_2224_cmp/code/data_visualization/single_tissue_deep_conf_mat_fig2/confusion_matrix.R",
+    "project_path": "confusion_matrix.R",
+    "type": "r_source",
+    "hash": "1059202835",
+    "contents": "",
+    "dirty": false,
+    "created": 1685044754255.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "1,93",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1685047285,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1685047285119,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,26 @@
+{
+    "id": "E59CBA78",
+    "path": "C:/Users/fxy134/OneDrive - University of Miami/work/project_gtex_nnls_deep_2224_cmp/code/data_visualization/mse_sensitivity_cmp_fig4/plot_distribution_mse.R",
+    "project_path": "plot_distribution_mse.R",
+    "type": "r_source",
+    "hash": "527898874",
+    "contents": "",
+    "dirty": false,
+    "created": 1685044221250.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "1,90",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1685047046,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1685047046043,
+    "read_only": false,
+    "read_only_alternatives": []
+}

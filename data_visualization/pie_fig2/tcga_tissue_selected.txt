@@ -1,0 +1,15 @@
+project		tissue
+BRCA	Breast
+COAD	Colon
+ESCA	Esophagus
+KICH	Kidney
+KIRC	Kidney
+KIRP	Kidney
+LIHC	Liver 
+LUAD	Lung
+LUSC	Lung
+PAAD	Pancreas
+PRAD	Prostate
+STAD	Stomach
+THCA	Thyroid
+UCEC	Uterus

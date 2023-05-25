@@ -1,0 +1,28 @@
+{
+    "id": "BDC1D219",
+    "path": "C:/Users/fxy134/OneDrive - University of Miami/work/project_gtex_nnls_deep_2224_cmp/code/data_visualization/box_plot_tss_specificity_fig_2/box.R",
+    "project_path": "box.R",
+    "type": "r_source",
+    "hash": "3910069464",
+    "contents": "",
+    "dirty": false,
+    "created": 1683914557701.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "7,37",
+        "scrollLine": "0",
+        "disableDependencyDiscovery": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1685040705,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1685040705990,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,22 @@
+library("data.table")
+library('tidyverse')
+
+sites = as.character(read.delim('all_tissues.txt', header=FALSE, sep=',')[1,1:31])
+
+fra = fread('GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_tpm.gct', header=TRUE, data.table=FALSE)
+
+anno = fread('GTEx_Analysis_v8_Annotations_SampleAttributesDs.txt', header=TRUE, data.table =FALSE)
+
+#selected_site = c('Bladder', 'Brain', 'Breast', 'Colon', 'Kidney', 'Liver', 'Lung', 'Ovary', 'Pancreas', 'Prostate', 'Skin', 'Small Intestine', 'Stomach', 'Thyroid', 'Uterus')
+
+anno <- anno[, c('SAMPID', 'SMTS')]
+
+for (site in sites){
+  print(site)
+  
+  site_id <- anno[anno$SMTS==site,][,'SAMPID']
+  f_name <- paste('gtex_data', site, 'full.csv', sep='_')
+  
+  sub_fra <- cbind(fra[, c('Name', 'Description')], fra[, colnames(fra) %in% site_id])
+  write.csv(sub_fra,f_name)
+}

@@ -1,0 +1,26 @@
+{
+    "id": "9F8D3257",
+    "path": "C:/Users/fxy134/OneDrive - University of Miami/work/project_gtex_nnls_deep_2224_cmp/code/NNLS_models/gtex_nnls/deconvolute.R",
+    "project_path": "deconvolute.R",
+    "type": "r_source",
+    "hash": "2198366524",
+    "contents": "",
+    "dirty": false,
+    "created": 1685035830163.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "1,54",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1685047988,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1685047988926,
+    "read_only": false,
+    "read_only_alternatives": []
+}

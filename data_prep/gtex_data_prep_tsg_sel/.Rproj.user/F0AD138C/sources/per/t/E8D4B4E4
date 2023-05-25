@@ -1,0 +1,27 @@
+{
+    "id": "E8D4B4E4",
+    "path": "C:/Users/fxy134/OneDrive - University of Miami/work/project_gtex_nnls_deep_2224_cmp/code/data_prep/gtex_data_prep_tsg_sel/get_mean_dat.R",
+    "project_path": "get_mean_dat.R",
+    "type": "r_source",
+    "hash": "3101010860",
+    "contents": "",
+    "dirty": false,
+    "created": 1684505704138.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "34,20",
+        "scrollLine": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1685038692,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1685038692898,
+    "read_only": false,
+    "read_only_alternatives": []
+}
