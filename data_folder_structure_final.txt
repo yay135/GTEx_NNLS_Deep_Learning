@@ -1,46 +1,4 @@
 .
-├── 2224
-│   ├── mask.pkl
-│   ├── model_05_03_rpt_10
-│   │   ├── fingerprint.pb
-│   │   ├── keras_metadata.pb
-│   │   ├── saved_model.pb
-│   │   └── variables
-│   │       ├── variables.data-00000-of-00001
-│   │       └── variables.index
-│   ├── patient_2224_v2
-│   │   └── res_2224_dl.csv
-│   ├── res_2224_nnls.csv
-│   ├── scaler.pkl
-│   └── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
-├── cmp
-│   ├── cmp_res
-│   │   ├── cmp_pred.csv
-│   │   ├── cmp_true.csv
-│   │   ├── mse_all_cmp_deep.csv
-│   │   └── pearson_all_cmp_deep.csv
-│   ├── model_05_03_rpt_30_cpm
-│   │   ├── assets
-│   │   ├── fingerprint.pb
-│   │   ├── keras_metadata.pb
-│   │   ├── saved_model.pb
-│   │   └── variables
-│   │       ├── variables.data-00000-of-00001
-│   │       └── variables.index
-│   ├── model_05_03_rpt_50_cpm
-│   │   ├── assets
-│   │   ├── fingerprint.pb
-│   │   ├── keras_metadata.pb
-│   │   ├── saved_model.pb
-│   │   └── variables
-│   │       ├── variables.data-00000-of-00001
-│   │       └── variables.index
-│   ├── mse_all_cmp_nnls.csv
-│   ├── pcc_all_cmp_nnls.csv
-│   ├── pred_cmp_nnls.csv
-│   ├── scaler.pkl
-│   ├── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
-│   └── true_cmp_nnls.csv
 ├── data_folder_structure_final.txt
 ├── gtex
 │   ├── model_05_03_rpt_20
@@ -85,10 +43,7 @@
 ├── raw
 │   ├── GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_tpm.gct
 │   ├── GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
-│   ├── Pt2224cpm.tsv
 │   ├── TSS_genes.csv
-│   ├── composition_cmp_05_05.csv
-│   ├── composition_cmp_05_18.csv
 │   ├── composition_gtex_05_08.csv
 │   ├── martquery.txt
 │   ├── martquery_0503203624_374.txt
@@ -98,9 +53,7 @@
 │   ├── selected_gtex_top_1_NT_1_fc_3_data.csv
 │   ├── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
 │   ├── selected_gtex_top_1_NT_1_fc_3_gene.csv
-│   ├── tcga_15t_tpm_05_11.csv
-│   ├── tissue_cmp.csv
-│   └── tissue_cmp_expression.csv
+│   └── tcga_15t_tpm_05_11.csv
 └── single_t
     ├── ROC.jpg
     ├── metrics.csv
@@ -118,4 +71,4 @@
     ├── true.csv
     └── true_onehot.csv
 
-22 directories, 96 files
+10 directories, 61 files
