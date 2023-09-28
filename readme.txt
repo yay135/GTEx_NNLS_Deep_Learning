@@ -8,6 +8,7 @@ finally, to verify you have downloaded all the datafiles, the datafolder structu
     data_folder_structure_final.txt
 
 link to download the data folder, estimated download size 5.00 GB.
-https://miamiedu-my.sharepoint.com/:f:/g/personal/fxy134_miami_edu/EsixjroK4CdKhkPndQ9iisQBn04iWKoV79RFHlOF0WShFQ?e=GZ3woI
+(data link coming soon)
+
 
 please contact fxy134@miami.edu for support.
