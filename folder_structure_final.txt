@@ -1,52 +1,10 @@
 .
-├── Deep_Learning_models
-│   ├── cmp_deep
-│   │   ├── __pycache__
-│   │   │   ├── decide_organ.cpython-311.pyc
-│   │   │   └── gen_composition.cpython-311.pyc
-│   │   ├── cmp_make_composition_gtex_compatible.py
-│   │   ├── cmp_validation_v2.py
-│   │   ├── decide_organ.py
-│   │   └── gen_composition.py
-│   ├── gtex_deep
-│   │   ├── __pycache__
-│   │   │   └── gen_composition.cpython-311.pyc
-│   │   ├── decide_organ.py
-│   │   └── gen_composition.py
-│   ├── patient_2224_deep
-│   │   ├── __pycache__
-│   │   │   ├── decide_organ.cpython-311.pyc
-│   │   │   └── gen_composition.cpython-311.pyc
-│   │   ├── decide_organ.py
-│   │   ├── gen_composition.py
-│   │   └── patient_2224.py
-│   └── single_tissue_predict_deep
-│       ├── single_t_05_09
-│       │   ├── assets
-│       │   ├── fingerprint.pb
-│       │   ├── keras_metadata.pb
-│       │   ├── saved_model.pb
-│       │   └── variables
-│       │       ├── variables.data-00000-of-00001
-│       │       └── variables.index
-│       └── which_tissue.py
-├── NNLS_models
-│   ├── 2224_nnls
-│   │   ├── 2224_nnls.Rproj
-│   │   └── decon_2224.R
-│   ├── cmp_nnls
-│   │   ├── cmp_nnls.Rproj
-│   │   └── deconvolute.R
-│   └── gtex_nnls
-│       ├── deconvolute.R
-│       └── gtex_nnls.Rproj
-├── data
-├── data_prep
+├── Data_Preparation
 │   └── gtex_data_prep_tsg_sel
 │       ├── gct.Rproj
 │       ├── get_mean_dat.R
 │       └── select_tsg.R
-├── data_visualization
+├── Data_Visualization
 │   ├── 2224_dotplot_fig_4
 │   │   ├── 2224_dotplot.Rproj
 │   │   ├── fraction_2224_nnls_vs_deep.jpg
@@ -96,7 +54,49 @@
 │       ├── result
 │       │   └── ranking_ggplot_spider.jpg
 │       └── single_tissue_deep_polygon_fig2.Rproj
+├── Deep_Learning_models
+│   ├── cmp_deep
+│   │   ├── __pycache__
+│   │   │   ├── decide_organ.cpython-311.pyc
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── cmp_make_composition_gtex_compatible.py
+│   │   ├── cmp_validation_v2.py
+│   │   ├── decide_organ.py
+│   │   └── gen_composition.py
+│   ├── gtex_deep
+│   │   ├── __pycache__
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── decide_organ.py
+│   │   └── gen_composition.py
+│   ├── patient_2224_deep
+│   │   ├── __pycache__
+│   │   │   ├── decide_organ.cpython-311.pyc
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── decide_organ.py
+│   │   ├── gen_composition.py
+│   │   └── patient_2224.py
+│   └── single_tissue_predict_deep
+│       ├── single_t_05_09
+│       │   ├── assets
+│       │   ├── fingerprint.pb
+│       │   ├── keras_metadata.pb
+│       │   ├── saved_model.pb
+│       │   └── variables
+│       │       ├── variables.data-00000-of-00001
+│       │       └── variables.index
+│       └── which_tissue.py
+├── NNLS_models
+│   ├── 2224_nnls
+│   │   ├── 2224_nnls.Rproj
+│   │   └── decon_2224.R
+│   ├── cmp_nnls
+│   │   ├── cmp_nnls.Rproj
+│   │   └── deconvolute.R
+│   └── gtex_nnls
+│       ├── deconvolute.R
+│       └── gtex_nnls.Rproj
+├── data_folder_structure_final.txt
 ├── folder_structure_final.txt
 └── readme.txt
 
-30 directories, 69 files
+29 directories, 70 files
