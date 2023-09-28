@@ -1,0 +1,121 @@
+.
+├── 2224
+│   ├── mask.pkl
+│   ├── model_05_03_rpt_10
+│   │   ├── fingerprint.pb
+│   │   ├── keras_metadata.pb
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   ├── patient_2224_v2
+│   │   └── res_2224_dl.csv
+│   ├── res_2224_nnls.csv
+│   ├── scaler.pkl
+│   └── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
+├── cmp
+│   ├── cmp_res
+│   │   ├── cmp_pred.csv
+│   │   ├── cmp_true.csv
+│   │   ├── mse_all_cmp_deep.csv
+│   │   └── pearson_all_cmp_deep.csv
+│   ├── model_05_03_rpt_30_cpm
+│   │   ├── assets
+│   │   ├── fingerprint.pb
+│   │   ├── keras_metadata.pb
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   ├── model_05_03_rpt_50_cpm
+│   │   ├── assets
+│   │   ├── fingerprint.pb
+│   │   ├── keras_metadata.pb
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   ├── mse_all_cmp_nnls.csv
+│   ├── pcc_all_cmp_nnls.csv
+│   ├── pred_cmp_nnls.csv
+│   ├── scaler.pkl
+│   ├── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
+│   └── true_cmp_nnls.csv
+├── data_folder_structure_final.txt
+├── gtex
+│   ├── model_05_03_rpt_20
+│   │   ├── assets
+│   │   ├── fingerprint.pb
+│   │   ├── keras_metadata.pb
+│   │   ├── saved_model.pb
+│   │   └── variables
+│   │       ├── variables.data-00000-of-00001
+│   │       └── variables.index
+│   ├── mse_all_gtex_deep.csv
+│   ├── mse_all_gtex_nnls.csv
+│   ├── pcc_all_gtex_nnls.csv
+│   ├── pearson_all_gtex_deep.csv
+│   ├── pred_gtex_deep.csv
+│   ├── pred_gtex_nnls.csv
+│   ├── scaler.pkl
+│   ├── true_gtex_deep.csv
+│   └── true_gtex_nnls.csv
+├── pie
+│   ├── TCGA_BLCA_TP_vs_NT.DEG.txt
+│   ├── TCGA_BRCA_TP_vs_NT.DEG.txt
+│   ├── TCGA_CESC_TP_vs_NT.DEG.txt
+│   ├── TCGA_CHOL_TP_vs_NT.DEG.txt
+│   ├── TCGA_COAD_TP_vs_NT.DEG.txt
+│   ├── TCGA_ESCA_TP_vs_NT.DEG.txt
+│   ├── TCGA_HNSC_TP_vs_NT.DEG.txt
+│   ├── TCGA_KICH_TP_vs_NT.DEG.txt
+│   ├── TCGA_KIRC_TP_vs_NT.DEG.txt
+│   ├── TCGA_KIRP_TP_vs_NT.DEG.txt
+│   ├── TCGA_LIHC_TP_vs_NT.DEG.txt
+│   ├── TCGA_LUAD_TP_vs_NT.DEG.txt
+│   ├── TCGA_LUSC_TP_vs_NT.DEG.txt
+│   ├── TCGA_PAAD_TP_vs_NT.DEG.txt
+│   ├── TCGA_PCPG_TP_vs_NT.DEG.txt
+│   ├── TCGA_PRAD_TP_vs_NT.DEG.txt
+│   ├── TCGA_READ_TP_vs_NT.DEG.txt
+│   ├── TCGA_SARC_TP_vs_NT.DEG.txt
+│   ├── TCGA_STAD_TP_vs_NT.DEG.txt
+│   ├── TCGA_THCA_TP_vs_NT.DEG.txt
+│   └── TCGA_THYM_TP_vs_NT.DEG.txt
+├── raw
+│   ├── GTEx_Analysis_2017-06-05_v8_RNASeQCv1.1.9_gene_tpm.gct
+│   ├── GTEx_Analysis_v8_Annotations_SampleAttributesDS.txt
+│   ├── Pt2224cpm.tsv
+│   ├── TSS_genes.csv
+│   ├── composition_cmp_05_05.csv
+│   ├── composition_cmp_05_18.csv
+│   ├── composition_gtex_05_08.csv
+│   ├── martquery.txt
+│   ├── martquery_0503203624_374.txt
+│   ├── mean_df.csv
+│   ├── selected_data_TCGA_validation.csv
+│   ├── selected_gtex_barcode.csv
+│   ├── selected_gtex_top_1_NT_1_fc_3_data.csv
+│   ├── selected_gtex_top_1_NT_1_fc_3_data.csv_pearson_validation.csv
+│   ├── selected_gtex_top_1_NT_1_fc_3_gene.csv
+│   ├── tcga_15t_tpm_05_11.csv
+│   ├── tissue_cmp.csv
+│   └── tissue_cmp_expression.csv
+└── single_t
+    ├── ROC.jpg
+    ├── metrics.csv
+    ├── pred.csv
+    ├── pred_score_onehot.csv
+    ├── scaler.pkl
+    ├── single_t
+    │   ├── assets
+    │   ├── fingerprint.pb
+    │   ├── keras_metadata.pb
+    │   ├── saved_model.pb
+    │   └── variables
+    │       ├── variables.data-00000-of-00001
+    │       └── variables.index
+    ├── true.csv
+    └── true_onehot.csv
+
+22 directories, 96 files

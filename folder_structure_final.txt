@@ -1,0 +1,102 @@
+.
+├── Deep_Learning_models
+│   ├── cmp_deep
+│   │   ├── __pycache__
+│   │   │   ├── decide_organ.cpython-311.pyc
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── cmp_make_composition_gtex_compatible.py
+│   │   ├── cmp_validation_v2.py
+│   │   ├── decide_organ.py
+│   │   └── gen_composition.py
+│   ├── gtex_deep
+│   │   ├── __pycache__
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── decide_organ.py
+│   │   └── gen_composition.py
+│   ├── patient_2224_deep
+│   │   ├── __pycache__
+│   │   │   ├── decide_organ.cpython-311.pyc
+│   │   │   └── gen_composition.cpython-311.pyc
+│   │   ├── decide_organ.py
+│   │   ├── gen_composition.py
+│   │   └── patient_2224.py
+│   └── single_tissue_predict_deep
+│       ├── single_t_05_09
+│       │   ├── assets
+│       │   ├── fingerprint.pb
+│       │   ├── keras_metadata.pb
+│       │   ├── saved_model.pb
+│       │   └── variables
+│       │       ├── variables.data-00000-of-00001
+│       │       └── variables.index
+│       └── which_tissue.py
+├── NNLS_models
+│   ├── 2224_nnls
+│   │   ├── 2224_nnls.Rproj
+│   │   └── decon_2224.R
+│   ├── cmp_nnls
+│   │   ├── cmp_nnls.Rproj
+│   │   └── deconvolute.R
+│   └── gtex_nnls
+│       ├── deconvolute.R
+│       └── gtex_nnls.Rproj
+├── data
+├── data_prep
+│   └── gtex_data_prep_tsg_sel
+│       ├── gct.Rproj
+│       ├── get_mean_dat.R
+│       └── select_tsg.R
+├── data_visualization
+│   ├── 2224_dotplot_fig_4
+│   │   ├── 2224_dotplot.Rproj
+│   │   ├── fraction_2224_nnls_vs_deep.jpg
+│   │   └── plot_dot.R
+│   ├── box_plot_tss_specificity_fig_2
+│   │   ├── box.R
+│   │   ├── box_plot_tss_specificity.Rproj
+│   │   ├── tss_gtex_MAP4K1_ENSG00000104814_box.png
+│   │   ├── tss_gtex_MAP4K1_ENSG00000104814_data.csv
+│   │   ├── tss_tcga_MAP4K1_ENSG00000104814_box.png
+│   │   └── tss_tcga_MAP4K1_ENSG00000104814_data.csv
+│   ├── correlation_scatter_fig3
+│   │   ├── correlation_scatter_fig3.Rproj
+│   │   ├── correlation_scatter_plot_facet.R
+│   │   ├── gtex_correlation_deep.jpg
+│   │   └── gtex_correlation_nnls.jpg
+│   ├── correlation_sensitivity_cmp_fig4
+│   │   ├── cmp_deep_vs_nnls_pcc_dot0.jpg
+│   │   ├── correlation_sensitivity_cmp_fig4.Rproj
+│   │   └── plot_dot.R
+│   ├── correlation_sensitivity_gtex_fig3
+│   │   ├── correlation_sensitivity_gtex_fig3.Rproj
+│   │   ├── gtex_deep_vs_nnls_pcc_dot.jpg
+│   │   └── plot_dot.R
+│   ├── mse_sensitivity_cmp_fig4
+│   │   ├── cmp_deep_vs_nnls_mse_dot.jpg
+│   │   ├── distribution_cmp_nnls_vs_deep_mse_comparison.jpg
+│   │   ├── distribution_cmp_nnls_vs_deep_pearson_comparison.jpg
+│   │   ├── mse_sensitivity_cmp_fig4.Rproj
+│   │   ├── plot_distribution_mse.R
+│   │   └── plot_dots.R
+│   ├── mse_sensitivity_gtex_fig3
+│   │   ├── gtex_deep_vs_nnls_mse_dot.jpg
+│   │   ├── mse_sensitivity_gtex_fig3.Rproj
+│   │   └── plot_dot.R
+│   ├── pie_fig2
+│   │   ├── pie.R
+│   │   ├── pie_fig2.Rproj
+│   │   ├── pie_normal_v_tumor_fc.jpg
+│   │   └── tcga_tissue_selected.txt
+│   ├── single_tissue_deep_conf_mat_fig2
+│   │   ├── confusion_matrix.R
+│   │   ├── confusion_matrix_single_tissue.jpg
+│   │   └── single_tissue_deep_conf_mat_fig2.Rproj
+│   └── single_tissue_deep_polygon_fig2
+│       ├── metrics_plot.R
+│       ├── result
+│       │   └── ranking_ggplot_spider.jpg
+│       └── single_tissue_deep_polygon_fig2.Rproj
+├── folder_structure_final.txt
+└── readme.txt
+
+30 directories, 69 files

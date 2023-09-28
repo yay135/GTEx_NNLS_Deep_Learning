@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#Validation test on semi silico cmp data
+# 05/23/2023 Fengyao Yan
+# Validation test on semi silico cmp data
 
 import random
 import numpy as np

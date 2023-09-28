@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#Apply NNLS deconvolution on patient 2224 data.
+# 05/23/2023 Fengyao Yan
+# Apply NNLS deconvolution on patient 2224 data.
 
 library(tidyverse)
 library(ggplot2)

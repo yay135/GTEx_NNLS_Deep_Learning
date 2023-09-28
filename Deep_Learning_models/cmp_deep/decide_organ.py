@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#construct a deep learning model and train the model for tissue deconvolution.
+# 05/23/2023 Fengyao Yan
+# construct a deep learning model and train the model for tissue deconvolution.
 
 import os
 import pickle

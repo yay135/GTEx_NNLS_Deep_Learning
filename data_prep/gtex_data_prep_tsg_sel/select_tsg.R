@@ -1,9 +1,11 @@
-#05/19/2023 Fengyao Yan 
+# 05/19/2023 Fengyao Yan 
 # This file is written to select TSG (tissue specific genes)
 
 library(matrixStats)
 library(tidyverse)
 library(data.table)
+
+data_folder <- '../../data/raw'
 
 dat <- fread(paste(data_folder,'/mean_df.csv',sep=''), data.table=FALSE)
 rownames(dat) <- dat[,1]

@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#apply NNLS deconvolution on the Gtex semi-silico data
+# 05/23/2023 Fengyao Yan
+# apply NNLS deconvolution on the Gtex semi-silico data
 
 library(tidyverse)
 library(ggplot2)

@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#Construct and train a deep learning model for tissue deconvolution and test the model on semi silico gtex data.
+# 05/23/2023 Fengyao Yan
+# Construct and train a deep learning model for tissue deconvolution and test the model on semi silico gtex data.
 
 import os
 import pickle

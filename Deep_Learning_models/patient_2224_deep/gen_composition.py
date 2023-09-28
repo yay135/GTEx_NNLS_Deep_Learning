@@ -1,5 +1,5 @@
-#05/23/2023 Fengyao Yan
-#helper functions
+# 05/23/2023 Fengyao Yan
+# helper functions
 
 import numpy as np
 import pandas as pd
