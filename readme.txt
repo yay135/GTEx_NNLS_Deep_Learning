@@ -9,7 +9,7 @@ The project folder structure should look like this:
 Finally, to verify you have downloaded all the data files, the datafolder structure should look like this:
     data_folder_structure_final.txt
 
-Link to download the data folder, estimated download size 5.00 GB.
+Link to download the data folder, estimated download size 1.20 GB.
 https://drive.google.com/file/d/163WrkVO9-WS7i4U4xdvLRl7QeAkSdm5s/view?usp=sharing
 
 Please contact fxy134@miami.edu for support.
