@@ -26,8 +26,10 @@ Run the following command to clone the project
 ### 2.4 Build a docker image 
 Change the directory to the project root folder  
 ``cd GTEx_NNLS_Deep_Learning``  
+
 Run the docker build command  
 ``docker build -t gtex_nnls_deep .``  
+
 Note: building the docker image will download the data and models for you automatically.  
 
 ### 2.5 Prepare your data
@@ -38,7 +40,7 @@ Create an empty data folder and move all the csv files that you want to run task
 Note: Make sure your csv files have gene ensembl id without version as the headers. The expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
 
 #### 2.5.3 Data shapes
-Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Each file may have different of columns. Each column is a gene, each row is a sample. 
+Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Each file in your data folder may have different columns. Each column is a gene, each row is a sample. 
 
 
 ### 2.6 Example tasks
@@ -49,15 +51,18 @@ Let's assume your task ready csv files are gathered in folder "test"
 
 #### 2.6.2 Run a deep learning tissue deconvolution task
 ``docker run --env RUN_TYPE=deconvolute --rm -v .:/app gtex_nnls_deep``  
+
 Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t
 #### 2.6.3 Run a deep learning single-tissue-type prediction task
 ``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``  
 #### 2.6.4 Run a customized task with customized data folder
 cd into your data folder first  
 ``cd [path/to/data]``  
+
 Run the desired task  
 ``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v .:/app gtex_nnls_deep``  
-Replace the task parameters and data folder parameters for your own usage.
+
+Replace the RUN_TYPE parameters and data folder parameters for your own usage.
 ### 2.10 Output
 The output files will be in the same folder as your csv data files with added prefix.
 For deconvolution task, the output files are created in the same folder, each new file has a prefix added to the front such as "deconvolute_[csv file name].csv"  
