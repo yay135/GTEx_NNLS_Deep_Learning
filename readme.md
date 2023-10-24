@@ -6,7 +6,7 @@ https://drive.google.com/file/d/163WrkVO9-WS7i4U4xdvLRl7QeAkSdm5s/view?usp=shari
 
 Or you can follow the steps bellow to download and configure models and data automatically.
 
-Note: Do not directly download the data folder into the project root folder, it will cause the following run steps to freeze. If you want to run the models with data use the following step to configure data and models automatically.
+Note: Do not directly download the data folder into the project root folder, it will cause the following run steps to freeze. If you want to run the models with data use the following steps to configure data and models automatically.
 
 ## 2. How to use this repo
 ### 2.1 System requirements
@@ -46,6 +46,7 @@ Do not mix files for different tasks, the columns of your files can be different
 ### 2.6 Example tasks
 
 #### 2.6.1 cd into your data folder:
+The test folder already contains some test csv files, you can use these data to test the build or you can create your own data folder.
 Let's assume your task ready csv files are gathered in folder "test".
 ``cd test``  
 
