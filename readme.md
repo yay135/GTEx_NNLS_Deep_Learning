@@ -7,7 +7,7 @@ https://drive.google.com/file/d/163WrkVO9-WS7i4U4xdvLRl7QeAkSdm5s/view?usp=shari
 Note: Do not download the data into the project root folder, it will cause the following run steps to freeze.
 
 ## 2. How to use this repo
-### 2.1 Hardware requirements
+### 2.1 System requirements
 You must have at least 20GB free disk space, at least 8GB RAM and a dual core CPU.
 A Windows or Linux or Mac OS system that is compatible with the lastest docker engine.
 
