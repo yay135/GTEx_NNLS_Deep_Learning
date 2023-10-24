@@ -26,9 +26,9 @@ Run the docker build command
 Note: building the docker image will download the data and models for you automatically.  
 
 ### 2.5 Prepare your data
-Create an empty folder and move all the csv files that you want to run deconvolution tasks or tissue type predictions with. Refer to the sample csv file format in the test folder to format your own file.
+Create an empty folder and move all the csv files that you want to run tasks with into this folder. Refer to the sample csv files in the test folder to format your own file.
 
-Note: Do not mix files for different tasks, the dimensions of your file can be different to the sample test file, the program will match as much columns as possible, the missing ones will be filled with 0.
+Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as much columns as possible, the missing ones will be filled with 0. Each file may have different of columns. Each column is a gene, each row is a sample. 
 
 Note: The gene designations use the Ensembl conventions and the expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
 
