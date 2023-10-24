@@ -37,10 +37,10 @@ Note: building the docker image will download the data and models for you automa
 Create an empty data folder and move all the csv files that you want to run tasks with into this folder. Refer to the sample csv files in the test folder to format your own file. Your data folder can be anywhere in your local machine.
 
 #### 2.5.2 Data types
-Note: Make sure your csv files have gene ensembl id without version as the headers. The expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
+Make sure your csv files have gene ensembl id without version as the headers. The expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
 
 #### 2.5.3 Data shapes
-Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Each file in your data folder may have different columns. Each column is a gene, each row is a sample. 
+Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Files in your data folder may have different columns. Each column is a gene, each row is a sample. 
 
 
 ### 2.6 Example tasks
@@ -65,9 +65,8 @@ Run the desired task
 Replace the RUN_TYPE parameters and data folder parameters for your own usage.
 ### 2.10 Output
 The output files will be in the same folder as your csv data files with added prefix.
-For deconvolution task, the output files are created in the same folder, each new file has a prefix added to the front such as "deconvolute_[csv file name].csv"  
-
-For single-tissue-type prediction task, the output files are created in the same folder, each new file has a prefix added to the front such as "tissue_type_[csv file name].csv"  
+For deconvolution task, each new file has a prefix added to the front such as "deconvolute_[csv file name].csv"  
+For single-tissue-type prediction task, each new file has a prefix added to the front such as "tissue_type_[csv file name].csv"  
 
 ## Team
 Fengyao Yan fxy134@miami.edu 
