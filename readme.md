@@ -9,6 +9,7 @@ Note: Do not download the data into the project root folder, it will cause the f
 ## 2. How to use this repo
 ### 2.1 Hardware requirements
 You must have at least 20GB free disk space, at least 8GB RAM and a dual core CPU.
+A Windows or Linux or Mac OS system that is compatible with the lastest docker engine.
 
 ### 2.2 Download and install docker
 Why use docker? docker allows us to distribute softwares consistently across all platforms. Check out this link on how to install docker on your machine.
