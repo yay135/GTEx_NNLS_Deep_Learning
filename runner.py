@@ -3,7 +3,7 @@ import os
 
 task = os.getenv("RUN_TYPE")
 
-if len(os.listdir("/app")) == 0:
+if len(list(filter(lambda x:x.endswith(".csv"), os.listdir("/app")))) == 0:
     print("ERROR: not csv files found in the data folder.")
     exit(1)
 
