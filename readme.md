@@ -21,13 +21,13 @@ We recommend installing docker desktop for simplicity.
 Note: after docker is installed, the commands bellow can be used across platforms such as Windows, Linux and Mac OS.
 
 ### 2.3 Clone the current project
-Run the following command to clone the project.
+Run the following command to clone the project.  
 ``git clone https://github.com/yay135/GTEx_NNLS_Deep_Learning``  
 ### 2.4 Build a docker image 
 Change the directory to the project root folder.  
 ``cd GTEx_NNLS_Deep_Learning``  
 
-Run the docker build command.
+Run the docker build command.  
 ``docker build -t gtex_nnls_deep .``  
 
 Note: building the docker image will download the data and models for you automatically.  
@@ -57,10 +57,10 @@ Here "test" is the folder where your deconvolution task files are gathered. RUN_
 #### 2.6.3 Run a deep learning single-tissue-type prediction task
 ``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``  
 #### 2.6.4 Run a customized task with customized data folder
-cd into your data folder first.
+cd into your data folder first.  
 ``cd [path/to/data]``  
 
-Run the desired task.
+Run the desired task.  
 ``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v .:/app gtex_nnls_deep``  
 
 Replace the RUN_TYPE parameters and data folder parameters for your own usage.
