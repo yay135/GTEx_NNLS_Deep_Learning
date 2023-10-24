@@ -6,7 +6,7 @@ https://drive.google.com/file/d/163WrkVO9-WS7i4U4xdvLRl7QeAkSdm5s/view?usp=shari
 
 Or you can follow the steps bellow to download and configure models and data automatically.
 
-Note: Do not download the data into the project root folder, it will cause the following run steps to freeze.
+Note: Do not directly download the data folder into the project root folder, it will cause the following run steps to freeze. If you want to run the models with data use the following step to configure data and models automatically.
 
 ## 2. How to use this repo
 ### 2.1 System requirements
@@ -21,13 +21,13 @@ We recommend installing docker desktop for simplicity.
 Note: after docker is installed, the commands bellow can be used across platforms such as Windows, Linux and Mac OS.
 
 ### 2.3 Clone the current project
-Run the following command to clone the project  
+Run the following command to clone the project.
 ``git clone https://github.com/yay135/GTEx_NNLS_Deep_Learning``  
 ### 2.4 Build a docker image 
-Change the directory to the project root folder  
+Change the directory to the project root folder.  
 ``cd GTEx_NNLS_Deep_Learning``  
 
-Run the docker build command  
+Run the docker build command.
 ``docker build -t gtex_nnls_deep .``  
 
 Note: building the docker image will download the data and models for you automatically.  
@@ -46,27 +46,27 @@ Do not mix files for different tasks, the columns of your files can be different
 ### 2.6 Example tasks
 
 #### 2.6.1 cd into your data folder:
-Let's assume your task ready csv files are gathered in folder "test"  
+Let's assume your task ready csv files are gathered in folder "test".
 ``cd test``  
 
 #### 2.6.2 Run a deep learning tissue deconvolution task
 ``docker run --env RUN_TYPE=deconvolute --rm -v .:/app gtex_nnls_deep``  
 
-Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t
+Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t.
 #### 2.6.3 Run a deep learning single-tissue-type prediction task
 ``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``  
 #### 2.6.4 Run a customized task with customized data folder
-cd into your data folder first  
+cd into your data folder first.
 ``cd [path/to/data]``  
 
-Run the desired task  
+Run the desired task.
 ``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v .:/app gtex_nnls_deep``  
 
 Replace the RUN_TYPE parameters and data folder parameters for your own usage.
 ### 2.10 Output
 The output files will be in the same folder as your csv data files with added prefix.
-For deconvolution task, each new file has a prefix added to the front such as "deconvolute_[csv file name].csv"  
-For single-tissue-type prediction task, each new file has a prefix added to the front such as "tissue_type_[csv file name].csv"  
+For deconvolution task, each new file has a prefix added to the front such as "deconvolute_[csv file name].csv".
+For single-tissue-type prediction task, each new file has a prefix added to the front such as "tissue_type_[csv file name].csv".
 
 ## Team
 Fengyao Yan fxy134@miami.edu 
