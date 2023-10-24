@@ -11,7 +11,7 @@ Note: Do not download the data into the project root folder, it will cause the f
 You must have at least 20GB free disk space, at least 8GB RAM and a dual core CPU.
 
 ### 2.2 Download and install docker
-Why use docker? docker allows our software to be configured and distributed consistently across all platforms. Check out this link on how to install docker on your machine.
+Why use docker? docker allows us to distribute consistently across all platforms. Check out this link on how to install docker on your machine.
 https://docs.docker.com/engine/install/  
 We recommend installing docker desktop for simplicity.
 
