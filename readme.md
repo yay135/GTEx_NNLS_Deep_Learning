@@ -33,12 +33,17 @@ Note: Do not mix files for different tasks, the dimensions of your file can be d
 Note: The gene designations use the Ensembl conventions and the expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
 
 Let's assume your task ready csv files are gathered in folder "test"
+cd into your data folder:
+``cd test``
 
 ### 2.6 Run a deconvolution task
-``docker run --env RUN_TYPE=deconvolute --rm -v test:/app gtex_nnls_deep``
+``docker run --env RUN_TYPE=deconvolute --rm -v .:/app gtex_nnls_deep``
 Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t
 ### 2.7 Run a single tissue type prediction task
-``docker run --env RUN_TYPE=single_t --rm -v test:/app gtex_nnls_deep``
+``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``
 ### 2.8 Run a customized task with customized data folder
-``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v [path/to/your/datafolder]:/app gtex_nnls_deep``
+cd into your data folder first
+``cd [path/to/data]``
+Run the desired task
+``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v .:/app gtex_nnls_deep``
 Replace the task parameters and data folder parameters for your own usage.
