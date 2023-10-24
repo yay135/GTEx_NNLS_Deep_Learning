@@ -47,7 +47,7 @@ Do not mix files for different tasks, the columns of your files can be different
 
 #### 2.6.1 cd into your data folder:
 The test folder already contains some test csv files, you can use these data to test the build or you can create your own data folder.
-Let's assume your task ready csv files are gathered in folder "test".
+Let's assume your task ready csv files are gathered in folder "test".  
 ``cd test``  
 
 #### 2.6.2 Run a deep learning tissue deconvolution task
