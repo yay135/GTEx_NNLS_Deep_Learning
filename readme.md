@@ -47,7 +47,7 @@ Note: Do not mix files for different tasks, the columns of your files can be dif
 Let's assume your task ready csv files are gathered in folder "test"  
 ``cd test``  
 
-#### 2.6.2 Run a deep learning deconvolution task
+#### 2.6.2 Run a deep learning tissue deconvolution task
 ``docker run --env RUN_TYPE=deconvolute --rm -v .:/app gtex_nnls_deep``  
 Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t
 #### 2.6.3 Run a deep learning single-tissue-type prediction task
