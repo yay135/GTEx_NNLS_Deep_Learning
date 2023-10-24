@@ -15,6 +15,8 @@ Why use docker? docker allows us to distribute softwares consistently across all
 https://docs.docker.com/engine/install/  
 We recommend installing docker desktop for simplicity.
 
+Note: after docker is installed, the commands bellow can be used across platforms such as Windows, Linux ans Max OS.
+
 ### 2.3 Clone the current project
 Run the following command to clone the project  
 ``git clone https://github.com/yay135/GTEx_NNLS_Deep_Learning``  
