@@ -39,7 +39,7 @@ cd into your data folder:
 ### 2.6 Run a deconvolution task
 ``docker run --env RUN_TYPE=deconvolute --rm -v .:/app gtex_nnls_deep``
 Here "test" is the folder where your deconvolution task files are gathered. RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t
-### 2.7 Run a single tissue type prediction task
+### 2.7 Run a single-tissue-type prediction task
 ``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``
 ### 2.8 Run a customized task with customized data folder
 cd into your data folder first
