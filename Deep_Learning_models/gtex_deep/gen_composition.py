@@ -76,6 +76,7 @@ def gen_comp(df=None):
     
     new_df = pd.DataFrame(data=da, columns=organs+gen_names)
     return new_df, organs
+
 if __name__ == '__main__':
     df_master = pd.read_csv(f'{data_raw}/selected_gtex_top_1_NT_1_fc_3_data.csv', index_col=0)
     dfs = []
@@ -85,4 +86,4 @@ if __name__ == '__main__':
 
     wdf = pd.concat(dfs, axis=0)
 
-    wdf.to_csv(f'{data_raw}/composition_gtex_05_08.csv', index=False)
+    wdf.to_csv(f'{data_raw}/composition_gtex_10_23.csv', index=False)

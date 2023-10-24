@@ -92,15 +92,16 @@ if __name__ == '__main__':
                             print(f'{len(dfs)}/{repeat_comp_validation} added')
                     validation_set = pd.concat(dfs, axis=0, ignore_index=True)
                 df_vali = validation_set.copy()
+                import pdb; pdb.set_trace();
                 X = df_vali.values[:, n_organs:]
                 y = df_vali.values[:, :n_organs]
                 data = X
-                print(f'non zero col before: {np.where(np.sum(data, axis=0) != 0)[0].shape[0]}')
+                #print(f'non zero col before: {np.where(np.sum(data, axis=0) != 0)[0].shape[0]}')
                 col_sum = np.sum(data, axis=0)
                 non_zero_col = np.where(col_sum != 0)[0]
                 sel_mask = random.sample(non_zero_col.tolist(), k=non_zero_col.shape[0]-after_mask if after_mask <= non_zero_col.shape[0] else 0)
                 data[:, sel_mask] = 0
-                print(f'non zero col after: {np.where(np.sum(data, axis=0) != 0)[0].shape[0]}')
+                #print(f'non zero col after: {np.where(np.sum(data, axis=0) != 0)[0].shape[0]}')
                 X = data
                 scaler = MinMaxScaler()
                 print('predicting ...')
