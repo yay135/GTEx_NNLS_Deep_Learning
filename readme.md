@@ -23,7 +23,7 @@ Change the directory to the project root folder
 ``cd GTEx_NNLS_Deep_Learning``
 Run the docker build command
 ``docker build -t gtex_nnls_deep .``
-Note: building the docker image will download the data and models for your automatically.
+Note: building the docker image will download the data and models for you automatically.
 
 ### 2.5 Prepare your data
 Create an empty folder and move all the csv files that you want to run deconvolution tasks or tissue type predictions with. Refer to the sample csv file format in the test folder to format your own file.
@@ -40,4 +40,4 @@ Let's assume your task ready csv files are gathered in folder "test"
 ``docker run --env RUN_TYPE=single_t --rm -v test:/app gtex_nnls_deep``
 ### 2.8 Run a customized task with customized data folder
 ``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v [path/to/your/datafolder]:/app gtex_nnls_deep``
-Replace the task parameters and data folder parameters for your own case.
+Replace the task parameters and data folder parameters for your own usage.
