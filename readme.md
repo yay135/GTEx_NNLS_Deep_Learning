@@ -38,7 +38,7 @@ Create an empty data folder and move all the csv files that you want to run task
 Note: Make sure your csv files have gene ensembl id without version as the headers. The expression data must be RNA-seq TPM normalized. Do not make further normalizations, the program has built in log2 transformation and min-max scaling functions.
 
 #### 2.5.3 Data shapes
-Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as much columns as possible, the missing ones will be filled with 0. Each file may have different of columns. Each column is a gene, each row is a sample. 
+Note: Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Each file may have different of columns. Each column is a gene, each row is a sample. 
 
 
 ### 2.6 Example tasks
