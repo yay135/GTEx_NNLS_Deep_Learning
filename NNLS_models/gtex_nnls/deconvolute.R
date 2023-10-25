@@ -1,21 +1,13 @@
 # 05/23/2023 Fengyao Yan
 # apply NNLS deconvolution on the Gtex semi-silico data
 
-library(tidyverse)
-library(ggplot2)
 library(nnls)
-library(Metrics)
 library(data.table)
-library(doParallel)
-library(parallel)
-
-# multicore setup
-cores = 2
-registerDoParallel(foreach)
+library(pbapply)
 
 
-mse_all = NULL
-pcc_all = NULL
+mse_all <- NULL
+pcc_all <- NULL
 
 is_sens_test <- FALSE
 
@@ -69,7 +61,7 @@ for (after_mask in seq(from = start, to = 6000, by = 500)){
 
 sel_idx <- sample(1:ncol(mix_dat), size=min(after_mask, ncol(mix_dat)))
 
-all_idx = 1:ncol(mix_dat)
+all_idx <- 1:ncol(mix_dat)
 
 zero_idx <- all_idx[! all_idx %in% sel_idx]
 
@@ -86,11 +78,6 @@ colnames(mse) <-  colnames(y_true)
 pcc <- data.frame(matrix(ncol=length(ogs), nrow=0))
 colnames(pcc) <- colnames(y_true)
 
-# multiprocess nnls
-
-cl <- makeCluster(cores)
-
-registerDoParallel(cl)
 
 run_nnls <- function(i){
   x <- ref_dat
@@ -99,12 +86,10 @@ run_nnls <- function(i){
   return (mod1$x)
 }
 
-clusterExport(cl, list('ref_dat', 'mix_dat_', 'run_nnls', 'nnls'))
 
 id_all<- 1:nrow(mix_dat_)
 
-system.time(res <- c(parLapply(cl, id_all, run_nnls)))
-stopCluster(cl)
+res <- pblapply(FUN = run_nnls, id_all)
 
 for(i in id_all){
   y_pred[i, ] <- res[[i]]
@@ -133,8 +118,8 @@ pcc[as.character(after_mask),] <- pcc_v
 print(paste('mean mse', mean(mse_v, na.rm = TRUE), sep=' '))
 print(paste('mean pcc', mean(pcc_v, na.rm = TRUE), sep=' '))
 
-mse_all = rbind(mse_all, mse)
-pcc_all = rbind(pcc_all, pcc)
+mse_all <- rbind(mse_all, mse)
+pcc_all <- rbind(pcc_all, pcc)
 
 }
 

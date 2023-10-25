@@ -23,7 +23,7 @@ for file in os.listdir(folder):
     custom_data = custom_data.apply(np.log2)
 
     cdata = scaler.transform(custom_data.values)
-    save_name = f"deconvolute_{file}"
+    save_name = f"deconvolute_deep_{file}"
 
     pred = model.predict(np.concatenate((np.zeros((cdata.shape[0], 1)), cdata), 1))
     pd.DataFrame(pred, columns=template.columns[:15]).to_csv(os.path.join(folder, save_name), index=False)
