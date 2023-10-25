@@ -10,14 +10,14 @@ library(doParallel)
 library(parallel)
 
 # multicore setup
-cores = 48
+cores = 2
 registerDoParallel(foreach)
 
 
 mse_all = NULL
 pcc_all = NULL
 
-is_sens_test <- TRUE
+is_sens_test <- FALSE
 
 data_folder <- '../../data/gtex'
 data_raw <- '../../data/raw'
