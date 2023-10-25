@@ -3,7 +3,8 @@
 This project allows you to deconvolute tissue types from RNA-seq expression data by leveraging a pretrained deep neural network.
 The nueral network is extensively trained using GTEx datasets v8.
 We also include other functions such deep-learning single tissue type prediction and tissue type deconvolution using NNLS.
-15 different tissue type deconvolutions are included in this project, refer to section 3.5.4 for more details.
+15 different tissue type deconvolutions are included in this project, refer to section 3.5.4 for more details. 
+The neural network is trained using TSG genes, in total, 6500 TSG genes are selected as the features of training. To get the TSG genes used in our traininig refer to the sample data in the test folder. 
 
 
 ## 2. Data and model availability
@@ -47,6 +48,7 @@ Make sure your csv files have gene ensembl id without version as the headers. Th
 
 #### 3.5.3 Data shapes
 Do not mix files for different tasks, the columns of your files can be different to the sample test file, the program will match as many columns as possible, the missing ones will be filled with 0. Files in your data folder may have different columns. Each column is a gene, each row is a sample. 
+The models favor csv files with more matched TSG genes.
 
 #### 3.5.4 Output tissue types
 The following tissue types are included in the output:
