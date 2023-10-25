@@ -29,7 +29,7 @@ Note: after docker is installed, the commands bellow can be used across platform
 ### 3.3 Clone the current project
 Run the following command to clone the project.  
 ``git clone https://github.com/yay135/GTEx_NNLS_Deep_Learning``  
-### 2.4 Build a docker image 
+### 3.4 Build a docker image 
 Change the directory to the project root folder.  
 ``cd GTEx_NNLS_Deep_Learning``  
 
@@ -71,7 +71,7 @@ cd into your data folder first.
 ``cd [path/to/data]``  
 
 Run the desired task.  
-``docker run --env RUN_TYPE=[single_t|deconvolute] --rm -v .:/app gtex_nnls_deep``  
+``docker run --env RUN_TYPE=[single_t|deconvolute_deep|deconvolute_nnls] --rm -v .:/app gtex_nnls_deep``  
 
 Replace the RUN_TYPE parameters and data folder parameters for your own usage.
 ### 3.10 Output
