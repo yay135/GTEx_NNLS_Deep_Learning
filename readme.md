@@ -11,9 +11,6 @@ The neural network is trained using TSG genes, in total, 6500 TSG genes are sele
 Datasets are partially released for confidentiality reasons. You can directly download the data and models using this link:
 https://drive.google.com/file/d/163WrkVO9-WS7i4U4xdvLRl7QeAkSdm5s/view?usp=sharing  
 
-Or you can follow the steps bellow to download and configure models and data automatically.
-
-Note: Do not directly download the data folder into the project root folder, it will cause the following run steps to freeze. If you want to run the models with data use the following steps to configure data and models automatically.
 
 ## 3. How to use this repo
 ### 3.1 System requirements
@@ -30,6 +27,8 @@ Note: after docker is installed, the commands bellow can be used across platform
 ### 3.3 Clone the current project
 Run the following command to clone the project.  
 ``git clone https://github.com/yay135/GTEx_NNLS_Deep_Learning``  
+
+Download data.7z using the link in section2 and copy data.7z to he cloned project folder.  
 ### 3.4 Build a docker image 
 Change the directory to the project root folder.  
 ``cd GTEx_NNLS_Deep_Learning``  
@@ -54,7 +53,7 @@ The models favor csv files with more matched TSG genes.
 The following tissue types are included in the output:
 "Brain","Breast","Colon","Esophagus","Kidney","Liver","Lung","Ovary","Pancreas","Prostate","Skin","Small Intestine","Stomach","Thyroid","Uterus"
 
-### 3.6 Example tasks
+### 3.6 Example tasks on Linux
 
 #### 3.6.1 cd into your data folder:
 The test folder already contains some test csv files, you can use these data to test the build or you can create your own data folder.
@@ -62,18 +61,18 @@ Let's assume your task ready csv files are gathered in folder "test".
 ``cd test``  
 
 #### 3.6.2 Run a deep learning tissue deconvolution task
-``docker run --env RUN_TYPE=deconvolute_deep --rm -v .:/app gtex_nnls_deep``  
+``docker run --env RUN_TYPE=deconvolute_deep --rm -v "$(pwd)":/app gtex_nnls_deep``  
 RUN_TYPE=deconvolute specifies the task you are running, it can be either RUN_TYPE=deconvolute or RUN_TYPE=single_t.
 #### 3.6.3 Run a NNLS tissue deconvolution task
-``docker run --env RUN_TYPE=deconvolute_nnls --rm -v .:/app gtex_nnls_deep``  
+``docker run --env RUN_TYPE=deconvolute_nnls --rm -v "$(pwd)":/app gtex_nnls_deep``  
 #### 3.6.3 Run a deep learning single-tissue-type prediction task
-``docker run --env RUN_TYPE=single_t --rm -v .:/app gtex_nnls_deep``    
+``docker run --env RUN_TYPE=single_t --rm -v "$(pwd)":/app gtex_nnls_deep``    
 #### 3.6.4 Run a customized task with customized data folder
 cd into your data folder first.  
 ``cd [path/to/data]``  
 
 Run the desired task.  
-``docker run --env RUN_TYPE=[single_t|deconvolute_deep|deconvolute_nnls] --rm -v .:/app gtex_nnls_deep``  
+``docker run --env RUN_TYPE=[single_t|deconvolute_deep|deconvolute_nnls] --rm -v "$(pwd)":/app gtex_nnls_deep``  
 
 Replace the RUN_TYPE parameters and data folder parameters for your own usage.
 ### 3.10 Output
